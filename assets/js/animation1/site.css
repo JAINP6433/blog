@@ -1,0 +1,16 @@
+.section--purple {
+  background-color: #9b59b6;
+}
+
+.section--blue {
+  background-color: #3498db;
+}
+
+.section--green {
+  background-color: #2ecc71;
+}
+
+
+#more {
+  margin: 20px auto 48px;
+}
