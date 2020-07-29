@@ -14,6 +14,8 @@ class blog_Controller extends CI_Controller {
 	{
 		$this->load->helper('url');
  $this->load->view('blog/header');
+ $this->load->view('blog/login');
+  $this->load->view('blog/footer');
     }
     
     
