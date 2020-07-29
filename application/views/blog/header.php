@@ -35,7 +35,7 @@
 <header id="header">
   <section class="top-bar">
     <section class="container">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ser-pro">Are You A Service Provider? Sign Up for FREE – <a href="login.html">Click Here</a></div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ser-pro">Are You A Service Provider? Sign Up for FREE – <a href="#">Click Here</a></div>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
         <div class="lang-part"><a href="#" class="active" title="English"><img src="<?php echo base_url('assets/images/en-flag.png');?>"/></a> <a href="#" title="German"><img src="<?php echo base_url('assets/images/gr-flag.png');?>"/></a></div>
         <div class="country-select" title="Change Country"> <a href="#"><img src="<?php echo base_url('assets/images/gb.png'); ?>" /> <span>United Kingdom</span></a> </div>
@@ -69,6 +69,18 @@
     </div>
   </nav>
 </header>
-
+<script type="text/javascript">
+$(function(){
+  $(".dropdown").hover(            
+  function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+    $(this).toggleClass('open');          
+  },
+  function() {
+    $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+    $(this).toggleClass('open');              
+  });
+ });
+</script> 
 
 

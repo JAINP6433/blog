@@ -55,3 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['default_controller'] = 'demo_controller';
 $route['default_controller'] = 'user_Controller';
 $route['index.php/(:any)'] = 'user_Controller/users';
+$route['default_controller'] = 'blog_Controller';
+

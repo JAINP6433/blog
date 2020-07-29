@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> blog1
 <footer id="footer">
   <section class="main-footer">
     <section class="container">
@@ -75,4 +78,8 @@
       </ul>
     </div>
   </section>
+<<<<<<< HEAD
 </footer>
+=======
+</footer>
+>>>>>>> blog1
