@@ -16,13 +16,6 @@ class blog_Controller extends CI_Controller {
 		die('string');
 	}
 	public function Users()
-<<<<<<< HEAD
-	{
-		$this->load->helper('url');
- $this->load->view('blog/header');
- $this->load->view('blog/login');
-  $this->load->view('blog/footer');
-=======
 	{   
 		if($this->input->post('submit'))
           {
@@ -119,7 +112,6 @@ class blog_Controller extends CI_Controller {
     } 
  
  
->>>>>>> blog1
     }
     ?>
     
