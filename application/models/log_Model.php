@@ -47,18 +47,28 @@ class log_Model extends CI_model
 												$this->db->from('user');
 												$this->db->where($multi);
 												$que = $this->db->get();
-												  
-												
 												if ( $que->num_rows())
 												{
-													return $que->row()->id;
+													return $que->row()->user_id;
 												}	
 												else
 												{
 													return false;
 												}
+											}	
 											
-										}	
-	
+						function getPost(){
+							$id=$this->session->userdata('user_id');
+							 $multi= array('user_id'=>$id);
+							$this->db->select(); 
+							$this->db->from('user');
+							$this->db->where($multi);
+							$query = $this->db->get();
+							return $query->result() ;
+							
+									 
+ }
+			
+					
 }
 		?>		
