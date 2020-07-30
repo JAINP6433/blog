@@ -72,11 +72,11 @@ class User_Model extends CI_model
 										}
 
 									
-										function display_records()
-											{
-											$query=$this->db->query("select * from data");
-											return $query->result();
-											}
+					    function display_records()
+						  {
+								$query=$this->db->query("select * from data");
+								return $query->result();
+						  }					
                               function add_records()
 											{
 											if($this->input->post('add'))

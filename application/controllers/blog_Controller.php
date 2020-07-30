@@ -7,7 +7,7 @@ class blog_Controller extends CI_Controller {
 									parent::__construct();
 									$this->load->helper('url');
 									$this->load->model('log_Model');
-	
+	                                  $this->isUserLoggedIn = $this->session->userdata('isUserLoggedIn');
 
 	
 									}
@@ -31,14 +31,18 @@ class blog_Controller extends CI_Controller {
 					
 				}
 		  }
+		   
 				
 	   if($this->input->post('login'))
           {
+
 			$output = $this->log_Model->getlog();
+
 		           if($output)
-				{  
-			    	 $this->load->library('session');
-					 $this->session->set_userdata('id');
+				{    
+					 $this->session->set_userdata('user_id',$output);
+
+					
 					return redirect('blog_Controller/displaydata');
 			    }
 			else
@@ -55,13 +59,58 @@ class blog_Controller extends CI_Controller {
 		  $this->load->view('blog/footer');
 
 		 }
+		
 		 public function displaydata(){
-		 	$this->load->view('blog/header');
-		    $this->load->view('blog/dashboard');
+              
+           $output['data'] = $this->log_Model->getPost(); 
+           $this->load->view('blog/header');
+		    $this->load->view('blog/dashboard',$output);
 		    $this->load->view('blog/footer');
 
 		 				
 		 }
+		
+		  public function my_booked_services(){
+		 	$this->load->view('blog/header');
+		    $this->load->view('blog/my-booked-services');
+		    $this->load->view('blog/footer');
+
+		 				
+		 }
+		  public function my_favorite_services(){
+		 	$this->load->view('blog/header');
+		    $this->load->view('blog/my-favorite-services');
+		    $this->load->view('blog/footer');
+
+		 				
+		 }
+		 public function my_favorite_providers(){
+		 	$this->load->view('blog/header');
+		    $this->load->view('blog/my-favorite-providers');
+		    $this->load->view('blog/footer');
+
+		 				
+		 }
+		 public function my_reviews(){
+		 	$this->load->view('blog/header');
+		    $this->load->view('blog/my-reviews');
+		    $this->load->view('blog/footer');
+
+		 				
+		 }
+		  public function user_Setting(){
+		 	$this->load->view('blog/header');
+		    $this->load->view('blog/user_Setting');
+		    $this->load->view('blog/footer');
+
+		 				
+		 } 
+		 public function logout(){ 
+        $this->session->unset_userdata('user_id'); 
+        $this->session->sess_destroy(); 
+        redirect('blog_Controller/users'); 
+    } 
+ 
  
     }
     ?>

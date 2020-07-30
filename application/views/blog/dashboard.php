@@ -1,3 +1,4 @@
+
 <section class="content-page">
   <div class="title_box wow fadeInUp">
     <div class="container">
@@ -15,13 +16,13 @@
             <div class="triangleBottomRight firstItem"></div>
             <div class="left-my-account-menu">
               <ul>
-                <li><a href="user-dashboard.html" class="active"><i class="fa fa-home"></i> Dashboard</a></li>
-                <li><a href="my-booked-services.html"><i class="fa fa-bookmark"></i> My Booked Services</a></li>
-                <li><a href="my-favorite-services.html"><i class="fa fa-heart"></i> My Favorite Services</a></li>
-                <li><a href="my-favorite-providers.html"><i class="fa fa-list-alt"></i> My Favorite Providers</a></li>
-                <li><a href="my-reviews.html"><i class="fa fa-comment"></i> My Reviews</a></li>
-                <li><a href="user-account-settings.html"><i class="fa fa-cogs"></i> Account Settings</a></li>
-                <li><a href="index.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                <li><a href="displaydata" class="active"><i class="fa fa-home"></i> Dashboard</a></li>
+                <li><a href="my_booked_services"><i class="fa fa-bookmark"></i> My Booked Services</a></li>
+                <li><a href="my_favorite_services"><i class="fa fa-heart"></i> My Favorite Services</a></li>
+                <li><a href="my_favorite_providers"><i class="fa fa-list-alt"></i> My Favorite Providers</a></li>
+                <li><a href="my_reviews"><i class="fa fa-comment"></i> My Reviews</a></li>
+                <li><a href="user_Setting"><i class="fa fa-cogs"></i> Account Settings</a></li>
+                <li><a href="logout"><i class="fa fa-power-off"></i> Logout</a></li>
               </ul>
             </div>
             <div class="triangleBottomleft firstItem"></div>
@@ -45,20 +46,22 @@
                   </div>
                 </div>
                 <section class="profile-info">
+
                   <ul>
-                    <li><span class="s-left1">Name :</span><span class="s-right"> Sophia Lopez</span>
+                    <?php foreach ($data as $user ) :?>
+                    <li><span class="s-left1">Name :</span><span class="s-right"><?php echo $name = $user->name;?> </span>
                       <section class="clearfix"></section>
                     </li>
-                    <li><span class="s-left1"> Email Address :</span><span class="s-right"> sophialopez@unv7.com</span>
+                    <li><span class="s-left1"> Email Address :</span><span class="s-right"> <?php echo $email = $user->email;?></span>
                       <section class="clearfix"></section>
                     </li>
-                    <li><span class="s-left1">Date of Birth :</span><span class="s-right"> 22-Nov-1990</span>
+                    <li><span class="s-left1">Date of Birth :</span><span class="s-right"><?php echo $date_Of_Birth = $user->date_Of_Birth ;?> </span>
                       <section class="clearfix"></section>
                     </li>
-                    <li><span class="s-left1"> Contact No. :</span><span class="s-right"> +44-1234546789</span>
+                    <li><span class="s-left1"> Contact No. :</span><span class="s-right"><?php echo $contact_No = $user->contact_No ;?></span>
                       <section class="clearfix"></section>
                     </li>
-                    <li><span class="s-left1"> Address :</span><span class="s-right"> 69 a Upper Street, San Francisco, USA </span>
+                    <li><span class="s-left1"> Address :</span><span class="s-right"> <?php echo $address = $user->address ;?> </span>
                       <section class="clearfix"></section>
                     </li>
                     <li><span class="s-left1">Account Status :</span><span class="s-right"> Active</span>
@@ -126,3 +129,4 @@
     </section>
   </section>
 </section>
+<?php endforeach; ?> 
