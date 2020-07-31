@@ -1,12 +1,8 @@
 <section class="content-page">
   <div class="title_box wow fadeInUp">
     <div class="container">
-<<<<<<< HEAD
       <div class="breadcrumbs"> <span><a class="home" href="index.html">Home</a></span>/<span>Login</span> </div>
-=======
-      <div class="breadcrumbs"> <span><a class="home" href="index">Home</a></span>/<span>Login</span> </div>
->>>>>>> blog1
-      <div class="title_wr">
+       <div class="title_wr">
         <h1>Login</h1>
       </div>
     </div>
@@ -19,90 +15,75 @@
             <div class="col-xs-12 col-sm-6">
               <div class="login-box">
                 <h1 class="log-title">Login <span>Your Account</span></h1>
-<<<<<<< HEAD
-                <form class="my-form1" action="user-dashboard.html">
-                  <div class="form-group has-feedback">
-                    <input type="email" class="form-control" placeholder="Enter Email">
-                    <span class="form-control-feedback"><i class="fa fa-envelope"></i></span> </div>
-                  <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Enter Password">
-=======
-                <form class="my-form1" method="post">
+                  <form class="my-form1" method="post">
                   <div class="form-group has-feedback">
                     <input type="email" class="form-control" name="email" placeholder="Enter Email" required>
-                    <span class="form-control-feedback"><i class="fa fa-envelope"></i></span> </div>
+                    <span class="form-control-feedback"><i class="fa fa-envelope"></i></span> 
+                  </div>
                   <div class="form-group has-feedback">
                     <input type="password" class="form-control" name="password" placeholder="Enter Password" required>
->>>>>>> blog1
-                    <span class="form-control-feedback"><i class="fa fa-key"></i></span> </div>
+                    <span class="form-control-feedback"><i class="fa fa-key"></i></span> 
+                  </div>
                   <div class="checkbox remember" style="margin-left:3px;">
                     <label>
                       <input type="checkbox" value="remember-me">
                       Remember me </label>
-                    <a class="forgot-password" href="#"> Forgot password? </a> </div>
-<<<<<<< HEAD
-                  <button class="btn btn-success btn-block" type="submit">Sign In</button>
-=======
+                    <a class="forgot-password" href="#"> Forgot password? </a>
+                  </div>
                   <button class="btn btn-success btn-block" type="submit" name="login" value="login">Sign In</button>
->>>>>>> blog1
+
                 </form>
+
+
+
                 <div class="or"><span>or</span></div>
                 <div class="social-login">
                   <h4>Sign in with social</h4>
                   <a href="javascript:;" class="btn btn-social btn-facebook"> <i class="fa fa-facebook"></i> Facebook</a> <a href="javascript:;" class="btn btn-social btn-twitter"> <i class="fa fa-twitter"></i> Twitter</a></div>
               </div>
             </div>
+              
             <div class="col-xs-12 col-sm-6">
-              <div class="login-box">
-                <h1 class="log-title">Register <span>With Bliwi</span></h1>
-<<<<<<< HEAD
-                <form class="my-form1" action="vendor-dashboard.html">
-=======
-                <form class="my-form1" method="post">
->>>>>>> blog1
-                  <div class="smart-forms smart-flat">
-                    <label class="field-label colm colm3" style="padding-top:0;"><strong>Register Me As:</strong></label>
-                    <div class="section colm colm9">
-                      <div class="option-group field">
-                        <label class="option">
-                          <input type="radio" name="registertype" checked>
-                          <span class="radio"></span> Customer </label>
-                        <label class="option">
-                          <input type="radio" name="registertype">
-                          <span class="radio"></span> Company </label>
-                        <label class="option">
-                          <input type="radio" name="registertype">
-                          <span class="radio"></span> Both </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group has-feedback">
-<<<<<<< HEAD
-                    <input type="email" class="form-control" placeholder="Email">
-                    <span class="form-control-feedback"><i class="fa fa-envelope"></i></span> </div>
-                  <div class="form-group has-feedback">
-                    <input type="password" class="form-control" placeholder="Password">
-=======
-                    <input type="email" class="form-control" name="email" placeholder="Email" required>
-                    <span class="form-control-feedback"><i class="fa fa-envelope"></i></span> </div>
-                  <div class="form-group has-feedback">
-                    <input type="password" class="form-control" name="password" placeholder="Password" required>
->>>>>>> blog1
-                    <span class="form-control-feedback"><i class="fa fa-key"></i></span> </div>
-                  <div class="checkbox remember" style="margin-left:3px;">
-                    <label>
-                      <input type="checkbox" value="remember-me">
-                      I agree to the <a href="terms.html">Terms &amp; Condition</a>. </label>
-                  </div>
-<<<<<<< HEAD
-                  <button class="btn btn-info btn-block" type="submit">Sign Up</button>
-=======
-                  <button class="btn btn-info btn-block" type="submit"  name="submit" value="submit">Sign Up</button>
->>>>>>> blog1
-                </form>
+                <div class="login-box">
+                   <h1 class="log-title">Register <span>With Bliwi</span></h1>
+                      <form class="my-form1" method="post">
+                         <div class="smart-forms smart-flat">
+                            <label class="field-label colm colm3" style="padding-top:0;"><strong>Register Me As:</strong></label>
+                               <div class="section colm colm9">
+                                 <div class="option-group field">
+                                   <label class="option">
+                                     <input type="radio" name="registertype" checked>
+                                       <span class="radio"></span> Customer 
+                                  </label>
+                                  <label class="option">
+                                    <input type="radio" name="registertype">
+                                    <span class="radio"></span> Company 
+                                  </label>
+                                  <label class="option">
+                                    <input type="radio" name="registertype">
+                                    <span class="radio"></span> Both 
+                                  </label>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="form-group has-feedback">
+                             <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            <span class="form-control-feedback"><i class="fa fa-envelope"></i></span> 
+                          </div>
+                          <div class="form-group has-feedback">
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            <span class="form-control-feedback"><i class="fa fa-key"></i></span>
+                          </div>
+                          <div class="checkbox remember" style="margin-left:3px;">
+                            <label>
+                              <input type="checkbox" value="remember-me">
+                              I agree to the <a href="terms.html">Terms &amp; Condition</a>. </label>
+                          </div>
+                          <button class="btn btn-info btn-block" type="submit"  name="submit" value="submit">Sign Up</button>
+                     </form>
+                   </div>
+                 </div>
               </div>
-            </div>
-          </div>
         </section>
       </div>
     </div>

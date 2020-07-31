@@ -42,7 +42,8 @@ class blog_Controller extends CI_Controller {
 				{    
 					 $this->session->set_userdata('user_id',$output);
 
-					
+					print_r($this->session->userdata('user_id'));
+							
 					return redirect('blog_Controller/displaydata');
 			    }
 			else

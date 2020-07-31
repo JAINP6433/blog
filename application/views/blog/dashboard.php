@@ -45,10 +45,11 @@
                       <img alt="Loader" title="Loader" width="64" height="64" src="images/loading-bubbles.svg"> </span> </div>
                   </div>
                 </div>
+                  
                 <section class="profile-info">
-
+                   <?php foreach ($data as $user ) :?>
+                 
                   <ul>
-                    <?php foreach ($data as $user ) :?>
                     <li><span class="s-left1">Name :</span><span class="s-right"><?php echo $name = $user->name;?> </span>
                       <section class="clearfix"></section>
                     </li>
@@ -71,6 +72,8 @@
                       <section class="clearfix"></section>
                     </li>
                   </ul>
+                   <?php endforeach; ?>
+              
                 </section>
                 <div class="clearfix"></div>
                 <div class="heading-section clearfix">
@@ -129,4 +132,4 @@
     </section>
   </section>
 </section>
-<?php endforeach; ?> 
+  

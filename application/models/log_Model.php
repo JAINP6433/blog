@@ -49,7 +49,8 @@ class log_Model extends CI_model
 												$que = $this->db->get();
 												if ( $que->num_rows())
 												{
-													return $que->row()->user_id;
+													print_r($que->row()->user_id) ;
+													exit;
 												}	
 												else
 												{
@@ -58,6 +59,7 @@ class log_Model extends CI_model
 											}	
 											
 						function getPost(){
+							
 							$id=$this->session->userdata('user_id');
 							 $multi= array('user_id'=>$id);
 							$this->db->select(); 
