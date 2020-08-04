@@ -49,8 +49,7 @@ class log_Model extends CI_model
 												$que = $this->db->get();
 												if ( $que->num_rows())
 												{
-													print_r($que->row()->user_id) ;
-													exit;
+													return $que->row()->user_id;
 												}	
 												else
 												{

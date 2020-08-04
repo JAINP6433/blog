@@ -54,7 +54,7 @@
           <li><a href="#" data-toggle="modal" data-target=".signup_popup"><i class="fa fa-lock"></i> Sign Up</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="add-a-service.html"><i class="fa ti-plus" style="color:#a0a0a0;"></i> <span style="border-bottom:1px solid #c6eaf6;">Add a Service</span></a></li>
+          <li><a href="add_a_service"><i class="fa ti-plus" style="color:#a0a0a0;"></i> <span style="border-bottom:1px solid #c6eaf6;">Add a Service</span></a></li>
           <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:#c07519;"><span style="border-bottom:1px solid #f3e7cc;">Find Services</span> <b class="caret" style="color:#a0a0a0;"></b></a>
             <ul class="dropdown-menu">
               <li><a href="find-services.html">Hairdresser</a></li>

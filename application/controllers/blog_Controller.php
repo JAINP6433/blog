@@ -70,7 +70,15 @@ class blog_Controller extends CI_Controller {
 
 		 				
 		 }
-		
+		 public function add_a_service(){
+              
+           $output['data'] = $this->log_Model->getPost(); 
+           $this->load->view('blog/header');
+		    $this->load->view('blog/add_Service',$output);
+		    $this->load->view('blog/footer');
+
+		 				
+		 }
 		  public function my_booked_services(){
 		 	$this->load->view('blog/header');
 		    $this->load->view('blog/my-booked-services');
