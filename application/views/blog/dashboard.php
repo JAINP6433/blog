@@ -72,7 +72,7 @@
                       <section class="clearfix"></section>
                     </li>
                   </ul>
-                   <?php endforeach; ?>
+                   <?php  endforeach; ?>
               
                 </section>
                 <div class="clearfix"></div>
@@ -82,42 +82,38 @@
                 <div class="table-responsive for-service">
                   <div class="table-responsive">
                     <table class="table table-vcenter table-striped">
+                       <?php foreach ($users as $pre ) :?>
+                 
                       <thead>
                         <tr>
                           <th>Service Name</th>
                           <th>Provider</th>
                           <th>Booking Date</th>
                           <th>Service Status</th>
-                          <th>Review Status</th>
+                          <th>review status</th>
                           <th>Option</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Lorem ipsum dolor sit amet</td>
-                          <td>Rob Roy Salon</td>
-                          <td>19-Aug-2015 10:00</td>
-                          <td><label class="label-danger">Pending</label></td>
-                          <td><label class="label-default">NA</label></td>
-                          <td><a href="#" class="btn btn-info"><i class="fa fa-eye"></i> View</a></td>
+                          <td><?php echo $service_Name = $pre->service_Name;?></td>
+                          <td><?php echo $provider_Name = $pre->provider_Name;?></td>
+                          <td><?php echo $booking_Date = $pre->booking_Date;?></td>
+                          <td><label class="label-danger"><?php $service_Status = $pre->service_Status;
+                          if($service_Status=='1')
+                          echo "active" ;
+                          else
+                            echo "deactive";?></label></td>
+                          <td><label class="label-default"><?php $review_Status = $pre->review_Status;
+                          if($review_Status=='1')
+                          echo "active" ;
+                          else
+                            echo "NA";?></label></td>
+                           <td><a href="#" class="btn btn-info"><i class="fa fa-eye">view</i></a></td>
                         </tr>
-                        <tr>
-                          <td>Lorem ipsum dolor sit amet</td>
-                          <td>Waterlilly Spa Center</td>
-                          <td>06-Jul-2015 11:00</td>
-                          <td><label class="label-danger">Pending</label></td>
-                          <td><label class="label-default">NA</label></td>
-                          <td><a href="#" class="btn btn-info"><i class="fa fa-eye"></i> View</a></td>
-                        </tr>
-                        <tr>
-                          <td>Lorem ipsum dolor sit amet</td>
-                          <td>Grace's Auto Mobile</td>
-                          <td>10-May-2015 10:00</td>
-                          <td><label class="label-danger">Pending</label></td>
-                          <td><label class="label-default">NA</label></td>
-                          <td><a href="#" class="btn btn-info"><i class="fa fa-eye"></i> View</a></td>
-                        </tr>
+                        
                       </tbody>
+                        <?php  endforeach; ?>
                     </table>
                   </div>
                 </div>

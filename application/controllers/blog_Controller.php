@@ -42,9 +42,14 @@ class blog_Controller extends CI_Controller {
 				{    
 					 $this->session->set_userdata('user_id',$output);
 
-					print_r($this->session->userdata('user_id'));
-							
-					return redirect('blog_Controller/displaydata');
+					if($this->session->userdata('user_id'))
+							{
+								return redirect('blog_Controller/displaydata');
+							}
+					else
+						{
+								return redirect('blog_Controller/displaydata');
+							}
 			    }
 			else
 				{
@@ -63,7 +68,7 @@ class blog_Controller extends CI_Controller {
 		
 		 public function displaydata(){
               
-           $output['data'] = $this->log_Model->getPost(); 
+           $output = $this->log_Model->getPost(); 
            $this->load->view('blog/header');
 		    $this->load->view('blog/dashboard',$output);
 		    $this->load->view('blog/footer');
@@ -80,8 +85,10 @@ class blog_Controller extends CI_Controller {
 		 				
 		 }
 		  public function my_booked_services(){
+		  	 $output['data'] = $this->log_Model->getservice(); 
+          
 		 	$this->load->view('blog/header');
-		    $this->load->view('blog/my-booked-services');
+		    $this->load->view('blog/my-booked-services',$output);
 		    $this->load->view('blog/footer');
 
 		 				

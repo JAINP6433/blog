@@ -15,13 +15,13 @@
             <div class="triangleBottomRight firstItem"></div>
             <div class="left-my-account-menu">
               <ul>
-                <li><a href="user-dashboard.html"><i class="fa fa-home"></i> Dashboard</a></li>
-                <li><a href="my-booked-services.html"><i class="fa fa-bookmark"></i> My Booked Services</a></li>
-                <li><a href="my-favorite-services.html"><i class="fa fa-heart"></i> My Favorite Services</a></li>
-                <li><a href="my-favorite-providers.html"><i class="fa fa-list-alt"></i> My Favorite Providers</a></li>
-                <li><a href="my-reviews.html"><i class="fa fa-comment"></i> My Reviews</a></li>
-                <li><a href="user-account-settings.html" class="active"><i class="fa fa-cogs"></i> Account Settings</a></li>
-                <li><a href="index.html"><i class="fa fa-power-off"></i> Logout</a></li>
+                <li><a href="displaydata" class="active"><i class="fa fa-home"></i> Dashboard</a></li>
+                <li><a href="my_booked_services"><i class="fa fa-bookmark"></i> My Booked Services</a></li>
+                <li><a href="my_favorite_services"><i class="fa fa-heart"></i> My Favorite Services</a></li>
+                <li><a href="my_favorite_providers"><i class="fa fa-list-alt"></i> My Favorite Providers</a></li>
+                <li><a href="my_reviews"><i class="fa fa-comment"></i> My Reviews</a></li>
+                <li><a href="user_Setting"><i class="fa fa-cogs"></i> Account Settings</a></li>
+                <li><a href="logout"><i class="fa fa-power-off"></i> Logout</a></li>
               </ul>
             </div>
             <div class="triangleBottomleft firstItem"></div>

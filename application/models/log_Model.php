@@ -65,10 +65,24 @@ class log_Model extends CI_model
 							$this->db->from('user');
 							$this->db->where($multi);
 							$query = $this->db->get();
+							$result=$query->result();
+							$this->db->select(); 
+							$this->db->from('service');
+							$que = $this->db->get();
+							$product=$que->result();
+							return array('data'=>$result,'users'=>$product);
+							
+									 
+                            }
+                            function getService(){
+							
+							$this->db->select(); 
+							$this->db->from('service');
+							$query = $this->db->get();
 							return $query->result() ;
 							
 									 
- }
+                              }
 			
 					
 }
