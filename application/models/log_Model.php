@@ -59,18 +59,23 @@ class log_Model extends CI_model
 											
 						function getPost(){
 							
-							$id=$this->session->userdata('user_id');
+							 $id=$this->session->userdata('user_id');
+							
 							 $multi= array('user_id'=>$id);
 							$this->db->select(); 
 							$this->db->from('user');
 							$this->db->where($multi);
 							$query = $this->db->get();
-							$result=$query->result();
+							$res=$query->result();
+							
 							$this->db->select(); 
 							$this->db->from('service');
+							$this->db->limit(3);
 							$que = $this->db->get();
 							$product=$que->result();
-							return array('data'=>$result,'users'=>$product);
+							return array('data'=>$res,'users'=>$product)
+							;
+							
 							
 									 
                             }
@@ -82,6 +87,32 @@ class log_Model extends CI_model
 							return $query->result() ;
 							
 									 
+                              }
+                              function addService(){
+                              	     $service_Category=$this->input->post('service_Category');
+									$service_Name=$this->input->post('service_Name');
+									$service_Description=$this->input->post('service_Description');
+									$service_Location=$this->input->post('service_Location');
+									$service_Time=$this->input->post('service_Time');
+									$service_Preparation_Time=$this->input->post('service_Preparation_Time');
+								$service_Degrading_Time=$this->input->post('service_Degrading_Time');
+									$service_Prize=$this->input->post('service_Prize');
+									
+									
+									
+                              	$data = [
+													          
+													            'service_Category'=> $service_Category,
+													           'service_Name'=> $service_Name,
+													           'service_Description'=> $service_Description,
+													           'service_Location'=> $service_Location,
+													           'service_Time'=> $service_Time,
+													           'service_Preparation_Time'=> $service_Preparation_Time,
+													          // 'service_Degrading_Time'=>$service_Degrading_Time,
+													             'service_Prize'=>$service_Prize,
+													            ];
+													       $que= $this->db->insert('service', $data);
+										       
                               }
 			
 					

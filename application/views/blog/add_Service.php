@@ -43,7 +43,7 @@
                           <label class="field-label colm colm3">Main Category:</label>
                           <div class="section colm colm9">
                             <label class="field select">
-                              <select id="main-category" name="main-category">
+                              <select id="main-category" name="service_Category">
                                 <option value="">Select Main Category</option>
                                 <option value="">Hairdresser</option>
                                 <option value="">Nailsalon</option>
@@ -53,13 +53,13 @@
                                 <option value="">Other</option>
                               </select>
                               <i class="arrow"></i> </label>
-                            <span class="input-hint"> <strong>Hint:</strong> Please choose appropriate category for your service.</span> <a href="#" class="btn"><i class="fa fa-plus"></i> Request A Category</a> </div>
+                            <span class="input-hint"> <strong>Hint:</strong> Please choose appropriate category for your service.</span></div>
                         </div>
                         <div class="frm-row">
                           <label class="field-label colm colm3">Service Name:</label>
                           <div class="section colm colm9">
                             <label class="field">
-                              <input type="text" placeholder="Enter service name" class="gui-input" id="names" name="names">
+                              <input type="text" placeholder="Enter service name" class="gui-input" id="names" name="service_Name">
                             </label>
                             <span class="input-hint"> <strong>Hint:</strong> Please enter service name here.</span> </div>
                         </div>
@@ -67,7 +67,7 @@
                           <label class="field-label colm colm3">Service Description:</label>
                           <div class="section colm colm9">
                             <label class="field">
-                              <textarea class="gui-textarea" id="comment" name="comment" placeholder="Enter Service Description"></textarea>
+                              <textarea class="gui-textarea" id="comment" name="service_Description" placeholder="Enter Service Description"></textarea>
                             </label>
                             <span class="input-hint"> <strong>Hint:</strong> Please enter description up to 300 characters of the service.</span> </div>
                         </div>
@@ -76,10 +76,10 @@
                           <div class="section colm colm9">
                             <div class="option-group field">
                               <label class="option">
-                                <input type="radio" name="service-location" value="incall" class="post_type">
+                                <input type="radio" name="service_Location" value="incall" class="post_type">
                                 <span class="radio"></span> Incall Service <span style="color: #777; display: block; font-family: Arial,Helvetica,sans-serif; font-size: 11px; padding-left: 25px;"> <strong>Hint:</strong> At your company premises.</span> </label>
                               <label class="option">
-                                <input type="radio" name="service-location" value="outcall" class="post_type">
+                                <input type="radio" name="service_Location" value="outcall" class="post_type">
                                 <span class="radio"></span> Outcall Service <span style="color: #777; display: block; font-family: Arial,Helvetica,sans-serif; font-size: 11px; padding-left: 25px;"> <strong>Hint:</strong> At customer’s door step.</span> </label>
                             </div>
                           </div>
@@ -104,7 +104,7 @@
                           <label class="field-label colm colm3">Service Time:</label>
                           <div class="section colm colm9">
                             <label class="field select">
-                              <select id="service-time" name="service-time">
+                              <select id="service-time" name="service_Time">
                                 <option value="">Select Service Time</option>
                                 <option value="">15 Mins</option>
                                 <option value="">30 Mins</option>
@@ -120,7 +120,7 @@
                           <label class="field-label colm colm3">Service Preperation Time:</label>
                           <div class="section colm colm9">
                             <label class="field select">
-                              <select id="service-preperation" name="service-preperation">
+                              <select id="service-preperation" name="service_Preparation_Time">
                                 <option value="">Select Service Preperation Time</option>
                                 <option value="">15 Mins</option>
                                 <option value="">30 Mins</option>
@@ -130,11 +130,11 @@
                               <i class="arrow"></i> </label>
                             <span class="input-hint"> <strong>Hint:</strong> How long is the preparation for the service man before he can begin.</span> </div>
                         </div>
-                        <div class="frm-row">
+                      <div class="frm-row">
                           <label class="field-label colm colm3">Service Degrading Time:</label>
                           <div class="section colm colm9">
                             <label class="field select">
-                              <select id="service-degrading " name="service-degrading ">
+                              <select id="service-degrading " name="service_Degrading_Time ">
                                 <option value="">Select Service Degrading Time</option>
                                 <option value="">15 Mins</option>
                                 <option value="">30 Mins</option>
@@ -148,7 +148,7 @@
                           <label class="field-label colm colm3">Service Pricing:</label>
                           <div class="section colm colm9">
                             <label class="field">
-                              <input type="text" placeholder="Enter service price" class="gui-input" id="price" name="price">
+                              <input type="text" placeholder="Enter service price" class="gui-input" id="price" name="service_Prize">
                             </label>
                             <span class="input-hint"> <strong>Hint:</strong> Please enter price range or starting price.</span> </div>
                         </div>
@@ -210,7 +210,7 @@
                         </div>
                       </div>
                       <div class="form-footer provider-btn" style="text-align:left;">
-                        <button type="submit" class="btn btn-info">Add Service <i class="fa fa-angle-right"></i></button>
+                        <button type="submit" name="addService" value="addService" class="btn btn-info">Add Service <i class="fa fa-angle-right"></i></button>
                       </div>
                     </form>
                   </div>

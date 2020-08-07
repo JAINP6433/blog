@@ -41,15 +41,9 @@ class blog_Controller extends CI_Controller {
 		           if($output)
 				{    
 					 $this->session->set_userdata('user_id',$output);
-
-					if($this->session->userdata('user_id'))
-							{
-								return redirect('blog_Controller/displaydata');
-							}
-					else
-						{
-								return redirect('blog_Controller/displaydata');
-							}
+					 return redirect('blog_Controller/displaydata');
+							
+					
 			    }
 			else
 				{
@@ -67,7 +61,6 @@ class blog_Controller extends CI_Controller {
 		 }
 		
 		 public function displaydata(){
-              
            $output = $this->log_Model->getPost(); 
            $this->load->view('blog/header');
 		    $this->load->view('blog/dashboard',$output);
@@ -76,6 +69,15 @@ class blog_Controller extends CI_Controller {
 		 				
 		 }
 		 public function add_a_service(){
+		 	if($this->input->post('addService'))
+          {
+			$output = $this->log_Model->addService();
+		        
+				   echo "<h3 style='color:blue'>Your account created successfully</h3>";
+				  
+					
+				}
+		
               
            $output['data'] = $this->log_Model->getPost(); 
            $this->load->view('blog/header');

@@ -47,9 +47,8 @@
                 </div>
                   
                 <section class="profile-info">
-                   <?php foreach ($data as $user ) :?>
-                 
-                  <ul>
+                    <?php foreach ($data as $user ):?>
+                 <ul>
                     <li><span class="s-left1">Name :</span><span class="s-right"><?php echo $name = $user->name;?> </span>
                       <section class="clearfix"></section>
                     </li>
@@ -73,8 +72,7 @@
                     </li>
                   </ul>
                    <?php  endforeach; ?>
-              
-                </section>
+                 </section>
                 <div class="clearfix"></div>
                 <div class="heading-section clearfix">
                   <h2>Recent <span>Booking History</span></h2>
