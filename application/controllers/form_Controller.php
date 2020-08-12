@@ -23,8 +23,7 @@ class form_Controller extends CI_Controller {
 				echo validation_errors();
 			}
 
-		}
-	}
+	
 
 		$this->load->view('form');
 		}
