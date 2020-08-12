@@ -13,10 +13,6 @@ class form_Controller extends CI_Controller {
 		public function index()
 		{
 
-			die('string');
-	} 
- 
-
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('uname','user Name','required|alpha');
 			$this->form_validation->set_rules('password','password','required|max_length[12]');
