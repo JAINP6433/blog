@@ -24,5 +24,4 @@ class form_Controller extends CI_Controller {
 				$this->load->view('form');
 			}
 		}
-	} 
 
