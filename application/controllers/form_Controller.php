@@ -12,11 +12,11 @@ class form_Controller extends CI_Controller {
 
 		public function index()
 		{
-<<<<<<< HEAD
+
 			die('string');
 	} 
  
-=======
+
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('uname','user Name','required|alpha');
 			$this->form_validation->set_rules('password','password','required|max_length[12]');
@@ -29,4 +29,4 @@ class form_Controller extends CI_Controller {
 			}
 		}
 	} 
->>>>>>> blog1
+
